@@ -1,0 +1,235 @@
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f3f3;
+    margin: 0;
+}
+
+/*                   
+-----------------------------------------------------------------------------------------
+                                      influencer-section
+  --------------------------------------------------------------------------------------
+                                                                                        */
+
+/*-------------title animation--------------START---------------------*/
+
+
+/*-----------------------END------------title animation-----END-------------------------*/
+
+
+
+.influencer-section h3{
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+
+
+.influencer{
+    
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+   }
+
+.influencer h1{
+    font-size: 2.2em;
+}
+
+.influencer-btn{
+    color: white;
+    background-color: #e20046;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+.fas.fa-arrow-right{
+    color: white;
+    margin-left: 5px;
+}
+
+
+/*-----
+--------------------------------------------------------
+                  product-section
+-------------------------------------------------------
+---------------------*/
+
+.collections-title{
+    text-align: center;
+}
+.product-title{
+    color: #e20046;
+}
+.rating-num{
+    font-size: large;
+    color: #e20046;
+}
+.collections-title{
+    font-size: x-large;
+    color: #e20046;
+}
+.all-products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    margin: auto;
+    justify-items: center;   
+}
+
+.product-ratings{
+    display: flex;
+}
+.fas{
+    color:orange;
+}
+.rating-num p{
+    margin: 0px 15px;
+    font-weight: 600;
+}
+.product-box{
+    background-color: white;
+    margin-right: 20px;
+    margin-bottom: 20px;
+   
+}
+.product{
+    padding: 5px;
+}
+.product-details{
+    line-height: 1.2em;
+}
+.products-btn{
+    float: right;
+    font-size: large;
+    margin-bottom: 25px;
+    background-color: #f7f3f3;
+    color: #e20046;
+    border: none;
+    padding: 10px 15px;
+    align-items: flex-end;
+}
+.products-btn-all{
+    display: flex;
+    justify-content: flex-end;   
+}
+.button{
+    margin: auto;
+    width:80%
+}
+#btn-color{
+    color: #e20046;
+}
+
+/*----
+-------------------------------------
+            survey-section
+-------------------------------------
+------*/
+.survey{
+    display: flex;
+    justify-content: center;
+    background-color:#e20046;
+    
+}
+.survey-text{
+    padding: 20px;
+    text-align: center;
+}
+.survey-text h1{
+    margin: 0px;
+}
+.survey-title{
+    font-size: 2em;
+    color: white;
+    
+}
+.survey button{
+    color: black;
+    font-size: larger;
+    font-weight: 500;
+    background-color: yellow;
+    padding: 10px 25px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.button a{
+    text-decoration: none;
+    color: #e20046;
+}
+.survey-font{
+    font-family: 'Allura', cursive;
+    font-size: 3em;
+    color: yellow;
+    margin: 0px;
+}
+
+/*----
+-------------------------------------
+            footer-section
+-------------------------------------
+------*/
+footer{
+    
+    background-color: black;
+    
+}
+.footer-text{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    color: white;
+    
+    
+}
+.footer-text h2{
+    margin-bottom: 20px;
+}
+.footer-text p{
+    line-height: .5px;
+    font-size: small;
+    font-weight: 100;
+}
+.fab{
+    margin: 25px 15px;
+    font-size: 1.5em;
+}
+
+              /*           
+             -----------------------------------------------------------------------------------------
+                                                 Media queries
+            --------------------------------------------------------------------------------------
+                                                                                                */
+
+ 
+                       
+  /*----------------------------------------MOBILE DEVICES---------------------------------------*/
+
+
+@media only screen and (max-width:688px){
+    .influencer{
+        text-align: center;
+        flex-direction: column;
+    }
+    .all-products{
+        grid-template-columns: repeat(1, 1fr);
+        padding: .5em;
+    }
+}
+
+
+  /*-----------------------------------------------TABS------------------------------------------*/
+
+
+@media only screen and (min-width:689px) and (max-width:991px){
+    .influencer{
+        text-align: center;
+        padding: 2em;
+    }
+    .all-products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
