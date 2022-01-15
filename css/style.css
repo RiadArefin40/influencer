@@ -14,6 +14,49 @@ body{
 
 /*-------------title animation--------------START---------------------*/
 
+ 
+ .animation{
+     line-height: 3em;
+ }
+.text1{
+   position: relative;
+    animation: text 3s infinite;
+}
+
+@keyframes text{
+    0%{
+        color: black;
+        
+        
+    }
+    20%{
+        letter-spacing: 3px;
+        color: #e20046;
+       
+    }
+
+    40%{
+        letter-spacing: 0px;
+        columns: black;
+    }
+    60%{
+       letter-spacing: 3px; 
+       color: #e20046;
+       
+    }
+    80%{
+        letter-spacing:0px ;
+        color: black;
+    }
+    90%{
+        letter-spacing:3px ;
+        color:#e20046;
+    }
+    100%{
+        letter-spacing:0px ;
+        color:black
+    }
+}
 
 /*-----------------------END------------title animation-----END-------------------------*/
 
@@ -25,7 +68,9 @@ body{
 }
 
 
-
+.influencer-text{
+    width: 480px;
+}
 .influencer{
     
     display: flex;
